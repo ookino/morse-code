@@ -45,4 +45,16 @@ def dedcode_word(word)
   word_arr.join
 end
 
+def decode_message(msg)
+  morse_msg = ''
+  msg.strip.tr('/', ' ').split('   ').each do |n|
+    morse_msg += "#{decode_word(n)} "
+  end
+  word
+end
+
+print decode_char('.-')
+print decode_word('-- -.--')
+print decode_message('-- -.--   -. .- -- .')
+print decode_message('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-. / .-. ..- -... .. . ...')
 
