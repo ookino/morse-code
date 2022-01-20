@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 MORSE = {
   '.-' => 'A',
   '-...' => 'B',
@@ -57,4 +55,3 @@ print decode_char('.-')
 print decode_word('-- -.--')
 print decode_message('-- -.--   -. .- -- .')
 print decode_message('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-. / .-. ..- -... .. . ...')
-
