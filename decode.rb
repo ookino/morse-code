@@ -48,7 +48,7 @@ def decode_message(msg)
   msg.strip.tr('/', ' ').split('   ').each do |n|
     morse_msg += "#{decode_word(n)} "
   end
-  word
+  morse_msg
 end
 
 print decode_char('.-')
