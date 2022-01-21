@@ -35,7 +35,7 @@ def decode_char(char)
   end
 end
 
-def dedcode_word(word)
+def decode_word(word)
   word_arr = []
   word.split.each do |n|
     word_arr.push(MORSE[n])
