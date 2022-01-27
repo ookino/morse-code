@@ -46,7 +46,7 @@ end
 def decode_message(msg)
   morse_msg = ''
   msg.strip.tr('/', ' ').split('   ').each do |n|
-    morse_msg += "#{decode_word(n)} "
+    morse_msg += "#{decode_word(n + 1)} "
   end
   morse_msg
 end
